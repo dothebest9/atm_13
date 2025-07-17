@@ -7,9 +7,9 @@ while True:
     if num == '4':
         break
     if num == '1':#입금 기능 구현 -> feat/deposit 브랜치에서 작업
-        deposit_amount=int(input("입금할 금액을 입력해주세요:"))#str:5000 ->int ->
+        deposit_amount=int(input("입금할 금액을 입력 해주세요:"))#str:5000 ->int ->
         balance += deposit_amount #balance=10000+deposit_amount
-        print(f'입금하신 금액{deposit_amount}원이고, 현재 잔액은{balance}원입니다')
+        print(f'입금하신 금액은{deposit_amount}원이고, 현재 잔액은{balance}원입니다')
     if num == '2':
         pass
     if num == '3':
