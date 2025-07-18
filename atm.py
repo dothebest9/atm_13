@@ -19,7 +19,7 @@ while True:
         withdraw_amount=min(balance,withdraw_amount)
         balance -= withdraw_amount
         print(f'출금하신 금액은{withdraw_amount}원이고, 현재 잔액은{balance}원입니다')
-        receipts.append(('출금내역',("출금금액",withdraw_amount),("현재잔액",balance)))
+        receipts.append(('출금내역',withdraw_amount,balance))
     if num == '3':
         if receipts:
             for i in receipts:
